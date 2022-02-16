@@ -1,0 +1,19 @@
+@use 'function';
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+    box-sizing: border-box;
+}
+
+$primary-color: #35CD8C;
+$h3-color:#2E266F;
+%box1 {
+    width: function.rem(639);
+    height: function.rem(636);
+    border-radius: function.rem(20);
+    margin-top: function.rem(260);
+}

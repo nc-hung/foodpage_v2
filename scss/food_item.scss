@@ -1,0 +1,172 @@
+@use 'base';
+@use 'function';
+#food_item {
+    position: relative;
+    .img1 {
+        margin: function.rem(201) 0 0 function.rem(135);
+    }
+    // # va . không đồng bộ nên không thể dùng & để nối
+    .food_item__text {
+        width: function.rem(636);
+        height: function.rem(115);
+        // border: 2px tomato solid;
+        position: absolute;
+        top: .625rem;
+        left: function.rem(190);
+        .text1 {
+            width: 100%;
+            h3 {
+                font-weight: 500;
+                font-style: normal;
+                font-size: 48px;
+                // line_height lớn nên tràn ra ngoài thẻ div -> nâng height lên 115px
+                line-height: 62px;
+                color: base.$h3-color;
+            }
+        }
+        .text2 {
+            width: function.rem(609);
+            height: function.rem(141);
+            // vì sao không position dựa vào food_item mà dựa vào text1
+            position: absolute;
+            // top: function.rem(218);
+            // left: function.rem(975);
+            top: .625rem;
+            left: 56rem;
+            p {
+                color: #707070;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    .food_item__menufood {
+        display: flex;
+        flex-direction: row;
+        .menufood__menu1 {
+            @extend %box1;
+            // border: 2px tomato solid;
+            // margin-top: function.rem(260);
+            // position: absolute;
+            // top: function.rem(666);
+            background-image: url("../img/food_item/Rectangle\ 7.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            &__content {
+                width: function.rem(639);
+                height: function.rem(253);
+                border-bottom-right-radius: 20px;
+                background-color: base.$primary-color;
+                opacity: 0.7;
+                padding: 40px 60px;
+                color: #FFFFFF;
+                position: relative;
+                h4 {
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                p {
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 27px;
+                }
+                .mn1__content__gps {
+                    width: 258px;
+                    height: 58px;
+                    background-color: #FFFFFF;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 37px;
+                    h5 {
+                        cursor: pointer;
+                        color: base.$primary-color;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        margin-top: 7%;
+                    }
+                }
+            }
+        }
+        .menufood__menu2 {
+            @extend %box1;
+            // border: 2px tomato solid;
+            // margin-top: function.rem(260);
+            // position: absolute;
+            // top: function.rem(263);
+            // left: function.rem(679);
+            margin-left: function.rem(40);
+            background-image: url("../img/food_item/Rectangle\ 6.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            &__content {
+                width: function.rem(639);
+                height: function.rem(253);
+                border-bottom-right-radius: 20px;
+                background-color: base.$primary-color;
+                opacity: 0.7;
+                padding: 40px 60px;
+                color: #FFFFFF;
+                position: relative;
+                h4 {
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                p {
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 27px;
+                }
+                .mn2__content__gps {
+                    width: 258px;
+                    height: 58px;
+                    background-color: #FFFFFF;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 37px;
+                    h5 {
+                        cursor: pointer;
+                        color: base.$primary-color;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        margin-top: 7%;
+                    }
+                }
+            }
+        }
+    }
+    .food_item__seemore {
+        width: 111px;
+        height: 75px;
+        position: absolute;
+        top: function.rem(762);
+        left: function.rem(1318);
+        cursor: pointer;
+        margin-left: function.rem(100);
+    }
+}
