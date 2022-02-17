@@ -1,0 +1,27 @@
+@use 'base';
+@use 'function';
+.our_services {
+    height: 3088px;
+    &__text {
+        border: 2px tomato solid;
+        display: flex;
+        // justify-content: space-between;
+        padding: 190px 613px 0 135px;
+        h3 {
+            // font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 62px;
+            color: #2E266F;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #707070;
+        }
+        ;
+    }
+}

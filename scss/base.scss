@@ -7,9 +7,11 @@
 body {
     width: 1920px;
     box-sizing: border-box;
+    background-color: #FFF5EC;
 }
 
 $primary-color: #35CD8C;
+// $background-color: #FFF5EC;
 $h3-color:#2E266F;
 %box1 {
     width: function.rem(639);
