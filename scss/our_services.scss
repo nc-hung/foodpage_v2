@@ -3,25 +3,136 @@
 .our_services {
     height: 3088px;
     &__text {
-        border: 2px tomato solid;
+        height: 150px;
+        margin-top: 167px;
+        margin-bottom: 150px;
+        // border: 2px tomato solid;
         display: flex;
-        // justify-content: space-between;
-        padding: 190px 613px 0 135px;
-        h3 {
-            // font-family: Poppins;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 62px;
-            color: #2E266F;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            margin-left: 135px;
+            margin-right: 30px;
         }
-        p {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
-            color: #707070;
+        &__h3 {
+            margin-right: 201px;
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 62px;
+                color: #2E266F;
+            }
+        }
+        &__p {
+            width: 609px;
+            height: 141px;
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #707070;
+            }
         }
         ;
+    }
+    &__content {
+        height: 962px;
+        // border: 2px tomato solid;
+        background-image: url("../img/ourservices/Group.png");
+        background-size: auto;
+        background-position-x: left;
+        padding: 97px 135px 90px 134px;
+        &__bg {
+            text-align: center;
+            display: grid;
+            grid-gap: 2%;
+            grid-template-columns: 25% 25% 40%;
+            grid-template-rows: auto;
+            grid-template-areas: "table1 ad_booking table3" "fff table2 table3";
+            .table1 {
+                @extend %box2;
+                grid-area: table1;
+                background-color: #FFEDDE;
+                padding: 90px;
+            }
+            .advanced_table_booking {
+                margin-top: 230px;
+                grid-area: ad_booking;
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #2E266F;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #707070;
+                }
+            }
+            .food_for_free {
+                grid-area: fff;
+                width: 160px;
+                height: 58px;
+                margin-top: 30%;
+                position: relative;
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #2E266F;
+                    text-align: right;
+                }
+                p {
+                    color: #707070;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                .img1 {
+                    position: absolute;
+                    top: 59%;
+                    right: 30%;
+                }
+                .img2 {
+                    position: absolute;
+                    top: 69%;
+                    right: -195%;
+                }
+            }
+            .table2 {
+                @extend %box2;
+                grid-area: table2;
+                background-color: #FFEDDE;
+                padding: 95px;
+            }
+            .table3 {
+                grid-area: table3;
+                background-color: #FFEDDE;
+                padding: 163px 174px 0px 174px;
+                h3 {
+                    margin-top: 90px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #2E266F;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #707070;
+                }
+            }
+        }
     }
 }
