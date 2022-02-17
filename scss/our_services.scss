@@ -1,7 +1,7 @@
 @use 'base';
 @use 'function';
 .our_services {
-    height: 3088px;
+    height: 1270px;
     &__text {
         height: 150px;
         margin-top: 167px;
@@ -27,6 +27,7 @@
         &__p {
             width: 609px;
             height: 141px;
+            margin-top: 2%;
             p {
                 font-style: normal;
                 font-weight: normal;
@@ -47,7 +48,7 @@
         &__bg {
             text-align: center;
             display: grid;
-            grid-gap: 2%;
+            grid-gap: 4%;
             grid-template-columns: 25% 25% 40%;
             grid-template-rows: auto;
             grid-template-areas: "table1 ad_booking table3" "fff table2 table3";

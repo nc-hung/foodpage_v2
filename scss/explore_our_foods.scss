@@ -1,0 +1,86 @@
+    @use 'base';
+    @use 'function';
+    .explore_our_foods {
+        text-align: center;
+        height: 1818px;
+        .explore__head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            &__h3 {
+                color: #2E266F;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 62px;
+            }
+            &__p {
+                width: 609px;
+                height: 65px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        .explore__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // align-content: space-around;
+            .bag {
+                width: 530px;
+                height: 552px;
+                position: relative;
+                h3 {
+                    color: #2E266F;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 289px;
+                    height: 44px;
+                    color: #707070;
+                    text-align: left;
+                }
+                label {
+                    color: base.$primary-color;
+                    font-size: 24px;
+                    line-height: 32px;
+                    position: absolute;
+                    bottom: 85px;
+                    right: 0px;
+                }
+            }
+            .food1 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle\ 22.png");
+            }
+            .food2 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle\ 23.png");
+            }
+            .food3 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle23.png");
+            }
+            .food4 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle24.png");
+            }
+            .food5 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle25.png");
+            }
+            .food6 {
+                @extend %box3;
+                // background-image: url("../img/explore_our_foods/Rectangle26.png");
+            }
+        }
+    }

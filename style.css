@@ -21,6 +21,11 @@ body {
   height: 380px;
 }
 
+.explore_our_foods .explore__content .food1, .explore_our_foods .explore__content .food2, .explore_our_foods .explore__content .food3, .explore_our_foods .explore__content .food4, .explore_our_foods .explore__content .food5, .explore_our_foods .explore__content .food6 {
+  width: 530px;
+  height: 403px;
+}
+
 .booking_box {
   height: 1090px;
   background-color: #FFEDDE;
@@ -127,6 +132,65 @@ body {
   right: 0;
 }
 
+.explore_our_foods {
+  text-align: center;
+  height: 1818px;
+}
+.explore_our_foods .explore__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.explore_our_foods .explore__head__h3 {
+  color: #2E266F;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+}
+.explore_our_foods .explore__head__p {
+  width: 609px;
+  height: 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.explore_our_foods .explore__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.explore_our_foods .explore__content .bag {
+  width: 530px;
+  height: 552px;
+  position: relative;
+}
+.explore_our_foods .explore__content .bag h3 {
+  color: #2E266F;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.explore_our_foods .explore__content .bag p {
+  width: 289px;
+  height: 44px;
+  color: #707070;
+  text-align: left;
+}
+.explore_our_foods .explore__content .bag label {
+  color: #35CD8C;
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  bottom: 85px;
+  right: 0px;
+}
 #food_item {
   height: 1328px;
   position: relative;
@@ -510,7 +574,7 @@ header .slider__bet__food {
 }
 
 .our_services {
-  height: 3088px;
+  height: 1270px;
 }
 .our_services__text {
   height: 150px;
@@ -537,6 +601,7 @@ header .slider__bet__food {
 .our_services__text__p {
   width: 609px;
   height: 141px;
+  margin-top: 2%;
 }
 .our_services__text__p p {
   font-style: normal;
@@ -555,7 +620,7 @@ header .slider__bet__food {
 .our_services__content__bg {
   text-align: center;
   display: grid;
-  grid-gap: 2%;
+  grid-gap: 4%;
   grid-template-columns: 25% 25% 40%;
   grid-template-rows: auto;
   grid-template-areas: "table1 ad_booking table3" "fff table2 table3";
