@@ -134,7 +134,7 @@ body {
 
 .explore_our_foods {
   text-align: center;
-  height: 1818px;
+  height: 1345px;
 }
 .explore_our_foods .explore__head {
   display: flex;
@@ -162,6 +162,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 60px;
+  margin-left: 135px;
 }
 .explore_our_foods .explore__content .bag {
   width: 530px;
@@ -704,6 +706,162 @@ header .slider__bet__food {
   font-size: 14px;
   line-height: 24px;
   color: #707070;
+}
+
+.download_app {
+  background-color: #FFEDDE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.download_app__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20%;
+  padding-left: 50px;
+}
+.download_app__left .img {
+  position: absolute;
+  left: 0px;
+}
+.download_app__left .h3 {
+  color: #2E266F;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+  width: 475px;
+  height: 122px;
+}
+.download_app__left .p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #707070;
+  width: 449px;
+  height: 71px;
+  margin: 30px 0 30px 0;
+}
+.download_app__left .img1 {
+  display: flex;
+  flex-direction: row;
+  align-self: self;
+}
+.download_app__left .img1_1 {
+  margin: 0 15px 0 0px;
+}
+.download_app__left .img1_2 {
+  margin: 0 15px 0 25px;
+}
+.download_app__right {
+  padding: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.download_app__right .mobile {
+  z-index: 2;
+}
+.download_app__right .veget {
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  left: -75%;
+}
+
+footer {
+  height: 946px;
+  display: flex;
+}
+footer .left {
+  position: relative;
+}
+footer .left__img1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .left__img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 35%;
+}
+footer .main__bag .h3 {
+  color: #2E266F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  width: 534px;
+  height: 90px;
+}
+footer .main__bag .p {
+  color: #707070;
+  font-size: 14px;
+  line-height: 24px;
+  width: 533px;
+  height: 44px;
+  margin: 30px 0 60px 0;
+}
+footer .main__bag__email {
+  margin-bottom: 60px;
+  position: relative;
+}
+footer .main__bag__email .email-box {
+  width: 544px;
+  height: 90px;
+  width: 544px;
+  height: 90px;
+  border: none;
+  border-radius: 50px;
+  padding: 40px;
+  font-size: 16px;
+}
+footer .main__bag__email .email-btn {
+  cursor: pointer;
+}
+footer .main__bag__email .email-btn input {
+  color: white;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  background-color: #35CD8C;
+  border-radius: 50px;
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  border: none;
+  z-index: 1;
+}
+footer .main__bag__email .email-btn i {
+  font-size: 25px;
+  position: absolute;
+  top: 34px;
+  right: 39px;
+  color: white;
+  z-index: 2;
+}
+footer .right {
+  height: 50px;
+  width: 400px;
+  position: relative;
+  top: 90%;
+  left: 112px;
+}
+footer .right__img {
+  display: flex;
+  flex-direction: row;
+}
+footer .right__img .img2 {
+  margin-left: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

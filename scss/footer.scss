@@ -1,0 +1,103 @@
+@use 'base';
+@use 'function';
+footer {
+    height: 946px;
+    // border: 2px tomato solid;
+    display: flex;
+    .left {
+        position: relative;
+        &__img1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &__img2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .main {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 35%;
+        &__bag {
+            .h3 {
+                color: #2E266F;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 48px;
+                width: 534px;
+                height: 90px;
+            }
+            .p {
+                color: #707070;
+                font-size: 14px;
+                line-height: 24px;
+                width: 533px;
+                height: 44px;
+                margin: 30px 0 60px 0;
+            }
+            &__email {
+                margin-bottom: 60px;
+                position: relative;
+                .email-box {
+                    width: 544px;
+                    height: 90px;
+                    width: 544px;
+                    height: 90px;
+                    border: none;
+                    border-radius: 50px;
+                    padding: 40px;
+                    font-size: 16px;
+                }
+                .email-btn {
+                    cursor: pointer;
+                    input {
+                        color: white;
+                        cursor: pointer;
+                        width: 56px;
+                        height: 56px;
+                        background-color: base.$primary-color;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 17px;
+                        right: 21px;
+                        border: none;
+                        z-index: 1;
+                    }
+                    i {
+                        font-size: 25px;
+                        position: absolute;
+                        top: 34px;
+                        right: 39px;
+                        color: white;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        height: 50px;
+        width: 400px;
+        position: relative;
+        top: 90%;
+        left: 112px;
+        // display: flex;
+        // flex-direction: row;
+        &__img {
+            display: flex;
+            flex-direction: row;
+            // position: absolute;
+            // bottom: 0px;
+            // right: 0px;
+            .img2 {
+                margin-left: 70px;
+            }
+        }
+    }
+}

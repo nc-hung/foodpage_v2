@@ -2,7 +2,7 @@
     @use 'function';
     .explore_our_foods {
         text-align: center;
-        height: 1818px;
+        height: 1345px;
         .explore__head {
             display: flex;
             flex-direction: column;
@@ -30,6 +30,8 @@
             flex-wrap: wrap;
             justify-content: space-around;
             // align-content: space-around;
+            margin-top: 60px;
+            margin-left: 135px;
             .bag {
                 width: 530px;
                 height: 552px;
