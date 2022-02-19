@@ -8,6 +8,13 @@ body {
     width: 1920px;
     box-sizing: border-box;
     background-color: #FFF5EC;
+    border: 2px tomato solid;
+    @media only screen and (max-width: 1195px) {
+        width: 1195px;
+    }
+    @media only screen and (max-width: 554px) {
+        width: 554px;
+    }
 }
 
 $primary-color: #35CD8C;
@@ -29,3 +36,7 @@ $h3-color:#2E266F;
     width: 530px;
     height: 403px;
 }
+
+@media only screen and (max-width: 1195px) {}
+
+@media only screen and (max-width: 554px) {}

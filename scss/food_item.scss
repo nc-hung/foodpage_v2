@@ -70,11 +70,11 @@
                 height: function.rem(253);
                 border-bottom-right-radius: 20px;
                 border-bottom-left-radius: 20px;
-                background-color: base.$primary-color;
-                opacity: 0.7;
+                background-color: #35cd8cb3;
                 padding: 40px 60px;
                 color: #FFFFFF;
                 position: relative;
+                // z-index: 2;
                 h4 {
                     font-weight: 700;
                     font-style: normal;
@@ -113,14 +113,8 @@
         }
         .menufood__menu2 {
             @extend %box1;
-            // border: 2px tomato solid;
-            // margin-top: function.rem(260);
-            // position: absolute;
-            // top: function.rem(263);
-            // left: function.rem(679);
             margin-left: function.rem(40);
             background-image: url("./img/food_item/Rectangle\ 6.png");
-            z-index: 2;
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -131,8 +125,8 @@
                 height: function.rem(253);
                 border-bottom-right-radius: 20px;
                 border-bottom-left-radius: 20px;
-                background-color: base.$primary-color;
-                opacity: 0.7;
+                background-color: #35cd8cb3;
+                // opacity: 0.7;
                 padding: 40px 60px;
                 color: #FFFFFF;
                 position: relative;
@@ -175,7 +169,7 @@
                 position: absolute;
                 right: -28px;
                 bottom: -30px;
-                z-index: -11;
+                z-index: -1;
             }
             .img2 {
                 position: absolute;
