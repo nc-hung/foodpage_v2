@@ -36,6 +36,7 @@
                 width: 530px;
                 height: 552px;
                 position: relative;
+                text-align: left;
                 h3 {
                     color: #2E266F;
                     font-style: normal;
@@ -44,12 +45,13 @@
                     line-height: 32px;
                     margin-top: 30px;
                     margin-bottom: 20px;
+                    margin-left: 20px;
                 }
                 p {
                     width: 289px;
                     height: 44px;
                     color: #707070;
-                    text-align: left;
+                    margin-left: 20px;
                 }
                 label {
                     color: base.$primary-color;
