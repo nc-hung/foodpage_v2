@@ -1,19 +1,40 @@
 @use 'base';
 @use 'function';
+@media only screen and (max-width: 1195px) {}
+
+@media only screen and (max-width: 554px) {}
+
 #food_item {
     height: 1328px;
     position: relative;
+    @media only screen and (max-width: 1195px) {
+        height: 952px;
+    }
+    @media only screen and (max-width: 554px) {
+        height: 1538px;
+    }
+    // @media only screen and (max-width: 1195px) {}
+    // @media only screen and (max-width: 554px) {}
     .img1 {
         margin: function.rem(201) 0 0 function.rem(135);
+        @media only screen and (max-width: 1195px) {
+            margin: function.rem(201) 0 0 function.rem(32);
+        }
+        @media only screen and (max-width: 554px) {}
     }
-    // # va . không đồng bộ nên không thể dùng & để nối
     .food_item__text {
         width: function.rem(636);
         height: function.rem(115);
-        // border: 2px tomato solid;
         position: absolute;
         top: .625rem;
         left: function.rem(190);
+        @media only screen and (max-width: 1195px) {
+            left: function.rem(80);
+        }
+        @media only screen and (max-width: 554px) {
+            width: 464px;
+            height: 64px;
+        }
         .text1 {
             width: 100%;
             h3 {
@@ -23,6 +44,12 @@
                 // line_height lớn nên tràn ra ngoài thẻ div -> nâng height lên 115px
                 line-height: 62px;
                 color: base.$h3-color;
+                @media only screen and (max-width: 1195px) {
+                    // font-size: 48px;
+                }
+                @media only screen and (max-width: 554px) {
+                    font-size: 36px;
+                }
             }
         }
         .text2 {
@@ -30,8 +57,6 @@
             height: function.rem(141);
             // vì sao không position dựa vào food_item mà dựa vào text1
             position: absolute;
-            // top: function.rem(218);
-            // left: function.rem(975);
             top: .625rem;
             left: 56rem;
             p {
@@ -40,18 +65,33 @@
                 font-style: normal;
                 font-size: 14px;
                 line-height: 24px;
+                @media only screen and (max-width: 554px) {
+                    width: 370px;
+                }
+            }
+            @media only screen and (max-width: 1195px) {
+                width: 369px;
+                height: 191px;
+                left: 45rem;
+            }
+            @media only screen and (max-width: 554px) {
+                width: 464px;
+                height: 142px;
+                left: 0rem;
+                top: 9rem;
             }
         }
     }
     .food_item__menufood {
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width: 1195px) {}
+        @media only screen and (max-width: 554px) {
+            flex-direction: column;
+        }
         .menufood__menu1 {
             @extend %box1;
             // border: 2px tomato solid;
-            // margin-top: function.rem(260);
-            // position: absolute;
-            // top: function.rem(666);
             background-image: url("./img/food_item/Rectangle\ 7.png");
             background-size: cover;
             display: flex;
@@ -64,6 +104,28 @@
                 top: 190px;
                 left: 165px;
                 transform: rotate(90deg);
+                @media only screen and (max-width: 1195px) {
+                    top: 119px;
+                    left: 140px;
+                    z-index: -1;
+                }
+                @media only screen and (max-width: 554px) {
+                    top: 195px;
+                    left: 140px;
+                    z-index: -1;
+                }
+            }
+            @media only screen and (max-width: 1195px) {
+                width: 494px;
+                height: 493px;
+                margin-top: 8.25rem;
+                margin-left: 25px;
+            }
+            @media only screen and (max-width: 554px) {
+                margin-left: 25px;
+                margin-top: 13rem;
+                top: 195px;
+                left: 140px;
             }
             &__content {
                 width: function.rem(639);
@@ -75,6 +137,13 @@
                 color: #FFFFFF;
                 position: relative;
                 // z-index: 2;
+                @media only screen and (max-width: 1195px) {
+                    width: 494px;
+                    height: 195px;
+                }
+                @media only screen and (max-width: 554px) {
+                    //khong doi
+                }
                 h4 {
                     font-weight: 700;
                     font-style: normal;
@@ -88,6 +157,13 @@
                     line-height: 24px;
                     margin-top: 20px;
                     margin-bottom: 27px;
+                    @media only screen and (max-width: 1195px) {
+                        width: 289px;
+                    }
+                    @media only screen and (max-width: 554px) {
+                        width: 298px;
+                        height: 58px;
+                    }
                 }
                 .mn1__content__gps {
                     width: 258px;
@@ -108,6 +184,11 @@
                         text-align: center;
                         margin-top: 7%;
                     }
+                    @media only screen and (max-width: 1195px) {
+                        width: 160px;
+                        height: 45px;
+                    }
+                    @media only screen and (max-width: 554px) {}
                 }
             }
         }
@@ -120,6 +201,16 @@
             flex-direction: column;
             justify-content: end;
             position: relative;
+            @media only screen and (max-width: 1195px) {
+                width: 494px;
+                height: 493px;
+                margin-top: 8.25rem;
+            }
+            @media only screen and (max-width: 554px) {
+                //khong doi
+                margin-left: 25px;
+                margin-top: 1.25rem;
+            }
             &__content {
                 width: function.rem(639);
                 height: function.rem(253);
@@ -130,6 +221,13 @@
                 padding: 40px 60px;
                 color: #FFFFFF;
                 position: relative;
+                @media only screen and (max-width: 1195px) {
+                    width: 494px;
+                    height: 195px;
+                }
+                @media only screen and (max-width: 554px) {
+                    //khong doi
+                }
                 h4 {
                     font-weight: 700;
                     font-style: normal;
@@ -143,6 +241,12 @@
                     line-height: 24px;
                     margin-top: 20px;
                     margin-bottom: 27px;
+                    @media only screen and (max-width: 1195px) {
+                        width: 289px;
+                    }
+                    @media only screen and (max-width: 554px) {
+                        //khong doi
+                    }
                 }
                 .mn2__content__gps {
                     width: 258px;
@@ -163,6 +267,11 @@
                         text-align: center;
                         margin-top: 7%;
                     }
+                    @media only screen and (max-width: 1195px) {
+                        width: 160px;
+                        height: 45px;
+                    }
+                    @media only screen and (max-width: 554px) {}
                 }
             }
             .img1 {
@@ -170,6 +279,13 @@
                 right: -28px;
                 bottom: -30px;
                 z-index: -1;
+                @media only screen and (max-width: 1195px) {
+                    right: -60px;
+                    bottom: 0px;
+                }
+                @media only screen and (max-width: 554px) {
+                    right: -25px;
+                }
             }
             .img2 {
                 position: absolute;
@@ -177,6 +293,14 @@
                 right: 144px;
                 transform: rotate(90deg);
                 z-index: -1;
+                @media only screen and (max-width: 1195px) {
+                    bottom: -204px;
+                    right: 76px;
+                }
+                @media only screen and (max-width: 554px) {
+                    bottom: -168px;
+                    right: 111px;
+                }
             }
         }
     }
@@ -188,5 +312,13 @@
         left: function.rem(1318);
         cursor: pointer;
         margin-left: function.rem(100);
+        @media only screen and (max-width: 1195px) {
+            top: 30rem;
+            left: 61.375rem;
+        }
+        @media only screen and (max-width: 554px) {
+            top: 90rem;
+            left: 6rem;
+        }
     }
 }
