@@ -1,7 +1,7 @@
 @use 'base';
 @use 'function';
 .our_services {
-    border: 2px rgb(33, 189, 116) solid;
+    // border: 2px rgb(33, 189, 116) solid;
     height: 1370px;
     @media only screen and (max-width: 1195px) {
         height: 1100px;

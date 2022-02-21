@@ -8,7 +8,7 @@ body {
     width: 1920px;
     box-sizing: border-box;
     background-color: #FFF5EC;
-    border: 2px tomato solid;
+    // border: 2px tomato solid;
     @media only screen and (max-width: 1195px) {
         width: 1195px;
     }
@@ -27,17 +27,7 @@ $h3-color:#2E266F;
     margin-top: function.rem(260);
 }
 
-// %box1-responsive1 {
-//     width: 494px;
-//     height: 493px;
-// }
-// %box1-responsive2 {
-//     width: 494px;
-//     height: 493px;
-// }
 %box2 {
-    // width: 493px;
-    // height: 493px;
     width: 100%;
     height: 100%;
 }
@@ -47,6 +37,5 @@ $h3-color:#2E266F;
     height: 403px;
 }
 
-@media only screen and (max-width: 1195px) {}
-
-@media only screen and (max-width: 554px) {}
+// @media only screen and (max-width: 1195px) {}
+// @media only screen and (max-width: 554px) {}

@@ -1,20 +1,49 @@
 @use 'base';
 @use 'function';
+// @media only screen and (max-width: 1195px) {}
+// @media only screen and (max-width: 554px) {}
 footer {
     height: 946px;
     // border: 2px tomato solid;
     display: flex;
+    @media only screen and (max-width: 554px) {
+        height: 500px;
+        background-image: url("../img/footer/Group.png");
+    }
     .left {
         position: relative;
         &__img1 {
             position: absolute;
             bottom: 0;
             left: 0;
+            img {
+                @media only screen and (max-width: 1195px) {
+                    width: 734px;
+                }
+                @media only screen and (max-width: 554px) {
+                    width: 330px;
+                }
+            }
+            @media only screen and (max-width: 1195px) {
+                bottom: -2px;
+                left: -222px;
+            }
+            @media only screen and (max-width: 554px) {
+                bottom: 7%;
+                left: -155px;
+                z-index: -1;
+            }
         }
         &__img2 {
             position: absolute;
             bottom: 0;
             left: 0;
+            @media only screen and (max-width: 554px) {
+                img {
+                    // width: 50%;
+                    display: none;
+                }
+            }
         }
     }
     .main {
@@ -23,6 +52,13 @@ footer {
         align-items: center;
         text-align: center;
         margin-left: 35%;
+        @media only screen and (max-width: 1195px) {
+            margin-left: 25%;
+        }
+        @media only screen and (max-width: 554px) {
+            margin-left: 1%;
+            margin-top: -20%;
+        }
         &__bag {
             .h3 {
                 color: #2E266F;
@@ -32,6 +68,14 @@ footer {
                 line-height: 48px;
                 width: 534px;
                 height: 90px;
+                @media only screen and (max-width: 554px) {
+                    font-size: 24px;
+                    margin-left: 18%;
+                    margin-top: 15%;
+                    h3 {
+                        width: 65%;
+                    }
+                }
             }
             .p {
                 color: #707070;
@@ -40,6 +84,12 @@ footer {
                 width: 533px;
                 height: 44px;
                 margin: 30px 0 60px 0;
+                @media only screen and (max-width: 554px) {
+                    margin-left: 15%;
+                    p {
+                        width: 70%;
+                    }
+                }
             }
             &__email {
                 margin-bottom: 60px;
@@ -53,9 +103,18 @@ footer {
                     border-radius: 50px;
                     padding: 40px;
                     font-size: 16px;
+                    @media only screen and (max-width: 554px) {
+                        width: 400px;
+                        position: relative;
+                    }
                 }
                 .email-btn {
                     cursor: pointer;
+                    @media only screen and (max-width: 554px) {
+                        position: absolute;
+                        top: 0%;
+                        left: 88%;
+                    }
                     input {
                         color: white;
                         cursor: pointer;
@@ -79,6 +138,11 @@ footer {
                     }
                 }
             }
+            &__nav-footer {
+                @media only screen and (max-width: 554px) {
+                    margin-top: -5%;
+                }
+            }
         }
     }
     .right {
@@ -87,11 +151,22 @@ footer {
         position: relative;
         top: 90%;
         left: 112px;
+        @media only screen and (max-width: 1195px) {
+            left: -10%;
+        }
+        @media only screen and (max-width: 554px) {
+            left: -85%;
+            top: 55%;
+        }
         // display: flex;
         // flex-direction: row;
         &__img {
             display: flex;
             flex-direction: row;
+            @media only screen and (max-width: 554px) {
+                position: absolute;
+                bottom: -270%;
+            }
             // position: absolute;
             // bottom: 0px;
             // right: 0px;
